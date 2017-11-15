@@ -10,17 +10,22 @@ public class EnforcingPrivacyWithCryptography
    {
       Scanner scan = new Scanner(System.in);
 
+      String fourDigits1;
       int fourDigits;
 
       System.out.print("Enter the number of four-digits: ");
-      fourDigits = scan.nextInt();
+      fourDigits1 = scan.nextLine();
 
-      fourDigits = encripted(fourDigits);
+      fourDigits = Integer.parseInt(fourDigits1);
+
+      String result = encripted(fourDigits);
+
+      System.out.println(result);
 
 
    }
 
-   public static int encripted(int digits)
+   public static String encripted(int digits)
    {
       int digit1 = 0;
       int digit2 = 0;
@@ -46,9 +51,9 @@ public class EnforcingPrivacyWithCryptography
 
       digits = (digit1 * 1000) + (digit2 * 100) + (digit3 * 10) + digit4;
 
-      System.out.printf("%d-%d-%d-%d%n", digit1, digit2, digit3, digit4);
-      System.out.println(digits);
+      String digits1 = String.format("%d%d%d%d%n", digit1, digit2, digit3, digit4);
 
-      return digits;
+
+      return digits1;
    }
 }
