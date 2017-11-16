@@ -23,7 +23,7 @@ public class RadioButtonFrame extends JFrame
    private final JRadioButton italicJRadioButton; // selects italic text
    private final JRadioButton boldItalicJRadioButton; // bold and italic
    private final ButtonGroup radioGroup; // holds radio buttons
-   private final ButtonGroup radioGroup; // holds radio buttons
+
 
    // RadioButtonFrame constructor adds JRadioButtons to JFrame
    public RadioButtonFrame()
