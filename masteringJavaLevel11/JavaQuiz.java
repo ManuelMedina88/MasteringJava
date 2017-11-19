@@ -68,14 +68,14 @@ public class JavaQuiz extends JFrame
       {
          if(counter < QA.getLength()) {
             if (textField.getText().equals(QA.getAnswer(counter))) {
-               JOptionPane.showMessageDialog(null, "It's correct!");
+               JOptionPane.showMessageDialog(JavaQuiz.this, "It's correct!");
                counter++;
                textField.setText("");
                goods++;
                if(counter < QA.getLength())
                   label1.setText(QA.getQuestion(counter));
             } else {
-               JOptionPane.showMessageDialog(null, "you fail.");
+               JOptionPane.showMessageDialog(JavaQuiz.this, "you fail.");
                textField.setText("");
                bads++;
                counter++;
@@ -86,7 +86,7 @@ public class JavaQuiz extends JFrame
                   double percent = (double) 100/QA.getLength();
                   double answered = (double) goods * percent;
                   String string = String.format("The test has finished.\nThe program will be reseted automatically%nYour score is : %.2f %nYou answered %d of %d Questions.", answered, goods, QA.getLength()  );
-                  JOptionPane.showMessageDialog(null, string);
+                  JOptionPane.showMessageDialog(JavaQuiz.this, string);
                   counter = 0;
                   textField.setText("");
                   label1.setText(QA.getQuestion(counter));
@@ -100,7 +100,7 @@ public class JavaQuiz extends JFrame
             double percent = (double) 100/QA.getLength();
             double answered = (double) goods * percent;
             String string = String.format("The test has finished.\nThe program will be reseted automatically%nYour score is : %.2f %nYou answered %d of %d Questions.", answered, goods, QA.getLength()  );
-            JOptionPane.showMessageDialog(null, string);
+            JOptionPane.showMessageDialog(JavaQuiz.this, string);
             counter = 0;
             textField.setText("");
             label1.setText(QA.getQuestion(counter));
@@ -117,7 +117,7 @@ public class JavaQuiz extends JFrame
       {
          if(counter < QA.getLength()) {
             String answer = QA.getAnswer(counter);
-            JOptionPane.showMessageDialog(null, answer);
+            JOptionPane.showMessageDialog(JavaQuiz.this, answer);
             counter++;
             textField.setText("");
             label1.setText(QA.getQuestion(counter));
@@ -131,6 +131,8 @@ public class JavaQuiz extends JFrame
       @Override
       public void actionPerformed(ActionEvent event)
       {
+         goods = 0;
+         bads = 0;
          counter = 0;
          textField.setText("");
          label1.setText(QA.getQuestion(counter));
