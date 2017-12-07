@@ -10,7 +10,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="RollDie.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../masteringLevel6/RollDie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#778#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -25,13 +38,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DiamondPrintingProgram.java" />
-        <option value="$PROJECT_DIR$/ModifiedDiamondPrintingProgram.java" />
-        <option value="$PROJECT_DIR$/../masteringLevel5/RandomIntegers.java" />
-        <option value="$PROJECT_DIR$/../masteringLevel5/RollDie.java" />
-        <option value="$PROJECT_DIR$/TheTwelveDaysOfChristmasSong.java" />
-        <option value="$PROJECT_DIR$/../masteringLevel5/Scope.java" />
-        <option value="$PROJECT_DIR$/../masteringLevel5/MethodOverload.java" />
         <option value="$PROJECT_DIR$/../masteringLevel5/DrawSmiley.java" />
         <option value="$PROJECT_DIR$/../masteringLevel5/DrawSmileyTest.java" />
         <option value="$PROJECT_DIR$/../masteringLevel5/BullsEyes.java" />
@@ -76,6 +82,13 @@
         <option value="$PROJECT_DIR$/../masteringLevel5/ComputerAssitedInstructionDifficultyLevels.java" />
         <option value="$PROJECT_DIR$/../masteringLevel5/ComputerAssistedInstructionDifficultyLevels.java" />
         <option value="$PROJECT_DIR$/../masteringLevel5/ComputerAssistedInstructionVaryingTheTypesOfProblems.java" />
+        <option value="$PROJECT_DIR$/../masteringLevel6/InitArray.java" />
+        <option value="$PROJECT_DIR$/../masteringLevel6/InitArray2.java" />
+        <option value="$PROJECT_DIR$/../masteringLevel6/InitArray3.java" />
+        <option value="$PROJECT_DIR$/../masteringLevel6/SumArray.java" />
+        <option value="$PROJECT_DIR$/../masteringLevel6/BarChart.java" />
+        <option value="$PROJECT_DIR$/../masteringLevel6/RollDie.java" />
+        <option value="$PROJECT_DIR$/../masteringLevel6/StudentPoll.java" />
       </list>
     </option>
   </component>
@@ -85,11 +98,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="239" />
-    <option name="y" value="508" />
-    <option name="width" value="1478" />
-    <option name="height" value="540" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="214" />
+    <option name="y" value="154" />
+    <option name="width" value="1476" />
+    <option name="height" value="458" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -108,7 +121,7 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../masteringLevel5/ComputerAssistedInstructionVaryingTheTypesOfProblems.java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../masteringLevel6/StudentPoll.java" />
     <property name="SearchEverywhereHistoryKey" value="update&#9;ACTION&#9;WelcomeScreen.Update" />
   </component>
   <component name="RunDashboard">
@@ -223,7 +236,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="7" />
+    <frame x="214" y="154" width="1476" height="458" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -275,55 +289,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ModifiedDiamondPrintingProgram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../masteringLevel5/MethodOverload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../masteringLevel5/DrawSmileyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../masteringLevel5/DrawSmiley.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../masteringLevel5/Scope.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="45" column="62" lean-forward="true" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../masteringLevel5/BullsEyesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../masteringLevel5/BullsEyes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../masteringLevel5/RandomShapesTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -535,9 +500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
           <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#4149#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -545,10 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="101" column="169" lean-forward="false" selection-start-line="101" selection-start-column="169" selection-end-line="101" selection-end-column="169" />
-          <folding>
-            <element signature="e#0#4627#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -556,25 +514,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../masteringLevel5/ComputerAssistedInstruccion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../masteringLevel5/ComputerAssistedInstruccion.java" />
     <entry file="file://$PROJECT_DIR$/../masteringLevel5/TableOfBinaryOctalAndHexadecimalNumbers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-471">
           <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#2849#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -582,26 +529,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="10" column="4" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="105" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#2801#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../masteringLevel5/ComputerAssitedInstructionDifficultyLevels.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../masteringLevel5/ComputerAssitedInstructionDifficultyLevels.java" />
     <entry file="file://$PROJECT_DIR$/../masteringLevel5/ComputerAssistedInstruction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
           <caret line="46" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="64" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -609,10 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
           <caret line="7" column="68" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#3682#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -628,8 +559,75 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../masteringLevel6/InitArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           <folding>
-            <element signature="e#0#5766#0" expanded="true" />
+            <element signature="e#0#632#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../masteringLevel6/InitArray2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#629#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../masteringLevel6/InitArray3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#765#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../masteringLevel6/SumArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#518#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../masteringLevel6/BarChart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#822#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../masteringLevel6/StudentPoll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="10" column="65" lean-forward="true" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#1126#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../masteringLevel6/RollDie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#778#0" expanded="true" />
           </folding>
         </state>
       </provider>
