@@ -22,7 +22,7 @@ public class TurtleGraphics
       }
 
       int[] order = {2, 5, 12, 3, 3, 5, 12, 3, 3, 5, 12, 3, 3, 5, 12, 3, 3, 3, 5, 19, 3, 3, 3, 1, 5, 19, 2, 3, 3, 3, 5, 19, 3, 3, 3, 5, 9, 3, 3, 5, 19, 4, 4, 4, 5, 10, 4, 5, 9, 1, 6, 9};
-      //int[] order = {2, 5, 4, 6 };
+
 
       for(int x = 0; x < order.length; x++)
       {
@@ -350,7 +350,7 @@ public class TurtleGraphics
                {
                   for(int row = 0; row < steps; row++)
                   {
-                     positionY++;
+                    positionY++;
                   }
                }
                else
@@ -364,7 +364,7 @@ public class TurtleGraphics
 
                break;
             case 2:
-               steps--;
+
                for(int row = positionY; row < sketchpad.length; row++ ) {
                   for (int column = positionX; column < sketchpad[row].length; column++)
                   {
@@ -430,8 +430,8 @@ public class TurtleGraphics
                }
                if(steps <= possibleStep) {
                   for (int counter = 1; counter <= steps; counter++) {
-                     positionY--;
-                     positionX++;
+                    positionY--;
+                    positionX++;
                   }
                }
                else
@@ -447,10 +447,11 @@ public class TurtleGraphics
                for(int row = positionY; row >= 0; row-- ) {
                   for (int column = positionX; column >= 0; column--)
                   {
-                     if((row == 0) || (column == 0))
+                     if((row == 0))
                      {
                         row = 0;
                         column = 0;
+                        possibleStep++;
                      }
                      else
                      {
@@ -469,7 +470,7 @@ public class TurtleGraphics
                }
                else
                {
-                  System.out.println("The steps requested are not valid.");
+                  System.out.println("The steps requested are not valid. "+ possibleStep);
                }
 
                sketchpad[positionY][positionX] = "↑";
@@ -514,7 +515,7 @@ public class TurtleGraphics
                for(int row = positionY; row >= 0; row-- ) {
                   for (int column = positionX; column >= 0; column--)
                   {
-                     if((row == 0) || (column == 0))
+                     if((column == 0))
                      {
                         row = 0;
                         column = 0;
