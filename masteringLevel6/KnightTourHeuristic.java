@@ -1,18 +1,27 @@
-// KnightsTour.java
+// KnightsTourHeuristic.java
 // @uthor : Manuel Medina.
-// Dic 15 2017 19:33
+// Dic 17 2017 11:16 a.m.
 import java.security.SecureRandom;
 import java.util.Scanner;
 
 
-public class KnightsTour
+public class KnightTourHeuristic
 {
    private static int[][] chessBoard = new int[8][8];
    private static boolean[][] alreadyFeet = new boolean[8][8];
+   private static int[][] accesible = {{2, 3, 4, 4, 4, 4, 3, 2},
+                                       {3, 4, 6, 6, 6, 6, 4, 3},
+                                       {4, 6, 8, 8, 8, 8, 6, 4},
+                                       {4, 6, 8, 8, 8, 8, 6, 4},
+                                       {4, 6, 8, 8, 8, 8, 6, 4},
+                                       {4, 6, 8, 8, 8, 8, 6, 4},
+                                       {3, 4, 6, 6, 6, 6, 4, 3},
+                                       {2, 3, 4, 4, 4, 4, 3, 2}};
+
    private static final int[] horizontalMoves = {2, 1, -1, -2, -2, -1, 1, 2};
    private static final int[] verticalMoves = {-1, -2, -2, -1, 1, 2, 2, 1};
-   private static int currentRow = 3;
-   private static int currentColumn = 4;
+   private static int currentRow = 7;
+   private static int currentColumn = 0;
    private static int counter3 = 1;
 
    private static boolean[] possibleSteps = new boolean[8];
@@ -29,13 +38,14 @@ public class KnightsTour
          if(moveKnight())
          {
             counter4++;
+
          }
          else
          {
             counter3 = 64;
          }
       }while(counter3 != 64);
-      System.out.println(counter4);
+      System.out.println("steps made " + counter4);
       displayChessBoard();
 
    }
@@ -86,30 +96,41 @@ public class KnightsTour
 
       int nextStep = -1;
 
-         if(counter1 >= 0)
+      // heuristic way
+      int lowest = 10;
+      for(int i = 0; i < validSteps.length; i++)
+      {
+         if (lowest > accesible[currentRow + verticalMoves[validSteps[i]]][currentColumn + horizontalMoves[validSteps[i]]])
          {
-            nextStep = validSteps[random.nextInt(counter)];
-
-            chessBoard[currentRow][currentColumn] = counter3;
-
-            //establece el movimiento anterior ya pisado
-            alreadyFeet[currentRow][currentColumn] = true;
-
-            currentRow += verticalMoves[nextStep];
-            currentColumn += horizontalMoves[nextStep];
-
-            counter3++;
-
+            lowest = accesible[currentRow + verticalMoves[validSteps[i]]][currentColumn + horizontalMoves[validSteps[i]]];
+            nextStep = validSteps[i];
          }
-         else
-         {
-            truth = false;
-         }
+      }
 
-         for(int i = 0; i < possibleSteps.length; i++)
-            possibleSteps[i] = false;
 
-         return truth;
+
+      if(counter1 >= 0)
+      {
+         chessBoard[currentRow][currentColumn] = counter3;
+
+         //establece el movimiento anterior ya pisado
+         alreadyFeet[currentRow][currentColumn] = true;
+
+         currentRow += verticalMoves[nextStep];
+         currentColumn += horizontalMoves[nextStep];
+
+         counter3++;
+
+      }
+      else
+      {
+         truth = false;
+      }
+
+      for(int i = 0; i < possibleSteps.length; i++)
+         possibleSteps[i] = false;
+
+      return truth;
    } // end method moveKnight
 
    // determine the possible movements
@@ -157,14 +178,14 @@ public class KnightsTour
    {
       boolean truth = true;
 
-         if(alreadyFeet[step1][step2] == false)
-         {
-            truth = true;
-         }
-         else
-         {
-            truth = false;
-         }
+      if(alreadyFeet[step1][step2] == false)
+      {
+         truth = true;
+      }
+      else
+      {
+         truth = false;
+      }
 
       return truth;
    }
