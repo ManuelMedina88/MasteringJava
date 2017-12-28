@@ -193,6 +193,7 @@ public class EightQueens {
 
    // play the puzzler
    public void playPuzzler() {
+      int counter2 = 0;
       do {
          counter = 0;
          initChessboardsPossition();
@@ -201,7 +202,9 @@ public class EightQueens {
             column.clear();
             putQueenInPosition();
          } while (row.size() > 0);
+         counter2++;
       } while(counter != 8);
       displayChessboard();
+      System.out.println(counter2);
    }
 }
