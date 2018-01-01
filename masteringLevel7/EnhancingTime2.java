@@ -1,35 +1,37 @@
-// Time2.java
+// EnhancingTime2.java
 // @uthor : Manuel Medina.
-// Date : dic 21 2017 21:02 a.m.
-// Time2 class declaration with overloaded constructors.
+// Date : dic 30th 2017 09:37 a.m.
+// app that modify the class Time2
 
-public class Time2
+public class EnhancingTime2
 {
+
    private int hour; // 0 - 23
    private int minute; // 0 - 59
    private int second; // 0 - 59
+   private EnhancingClassDate date;
 
    // Time2 no-argument constructor:
    // initializes each instance variable to zero
-   public Time2()
+   public EnhancingTime2()
    {
       this(0, 0, 0); // invoke constructor with three arguments
    }
 
    // Time2 constructor: hour supplied, minute and second defaulted to 0
-   public Time2(int hour)
+   public EnhancingTime2(int hour)
    {
       this(hour, 0, 0); // invoke constructor with three arguments
    }
 
    // Time2 constructor: hour and minute supplied, second defaulted to 0
-   public Time2(int hour, int minute)
+   public EnhancingTime2(int hour, int minute)
    {
       this(hour, minute, 0); // invoke constructor with three arguments
    }
 
    // Time2 constructor: hour, minute and second supplied
-   public Time2(int hour, int minute, int second)
+   public EnhancingTime2(int hour, int minute, int second)
    {
       if (hour < 0 || hour >= 24)
          throw new IllegalArgumentException("hour must be 0-23");
@@ -43,10 +45,11 @@ public class Time2
       this.hour = hour;
       this.minute = minute;
       this.second = second;
+      date = new EnhancingClassDate(12, 31, 2017, 1);
    }
 
    // Time2 constructor: another Time2 object supplied
-   public Time2(Time2 time)
+   public EnhancingTime2(EnhancingTime2 time)
    {
       // invoke constructor with three arguments
       this(time.getHour(), time.getMinute(), time.getSecond());
@@ -95,6 +98,8 @@ public class Time2
    {
       if (second < 0 || second >= 60)
          throw new IllegalArgumentException("Second must be 0-59.");
+
+      this.second = second;
    }
 
    // Get methods
@@ -115,18 +120,55 @@ public class Time2
    {
       return second;
    }
-d
+   public void tick()
+   {
+      if(getSecond() == 59)
+      {
+         incrementMinute();
+         setSecond(0);
+      }
+      else
+      {
+         setSecond(getSecond() + 1);
+      }
+   }
+
+   public void incrementMinute()
+   {
+      if(getMinute() == 59) {
+         incrementHour();
+         setMinute(0);
+      }
+      else
+      {
+         setMinute(getMinute() + 1);
+      }
+   }
+   public void incrementHour()
+   {
+      if(getHour() == 23)
+      {
+         setHour(0);
+         setSecond(0);
+         date.nextDay();
+      }
+      else
+      {
+         setHour(getHour()+1);
+      }
+   }
+
    // convert to String in universal-time format (HH:MM:SS)
    public String toUniversalString()
    {
       return String.format(
-        "%02d:%02d:%02d", getHour(), getMinute(), getSecond());
+         "%s %02d:%02d:%02d",date, getHour(), getMinute(), getSecond());
    }
 
    // convert to String in standard-time format (H:MM:SS AM or PM)
    public String toString()
    {
-      return String.format("%d:%02d:%02d %s", ((getHour() == 0 || getHour() == 12) ? 12 : getHour() % 12),
+      return String.format("%s %d:%02d:%02d %s", date, ((getHour() == 0 || getHour() == 12) ? 12 : getHour() % 12),
          getMinute(), getSecond(), (getHour() < 12 ? "AM" : "PM"));
    }
 } // end class Time2

@@ -1,33 +1,38 @@
-// MyLine.java
+// MyOval.java
 // @uthor : Manuel Medina.
-// Date : Dic 27th 2017 23:09
-// MyLine class represents a line.
-import java.awt.Color;
+// Date : dic 29th 2017 07:31 p.m.
+// app that draw an oval
 import java.awt.Graphics;
+import java.awt.Color;
 
-public class MyLine
+public class MyOval
 {
-   private int x1; // x-coordinate of first endpoint
-   private int y1; // y-coordinate of first endpoint
-   private int x2; // x-coordinate of second endpoint
-   private int y2; // y-coordinate of second endpoint
+   private int x1;
+   private int y1;
+   private int x2;
+   private int y2;
+   private boolean flag;
    private Color color;
 
-   public MyLine()
+   public MyOval()
    {
       setX1(0);
       setY1(0);
       setX2(0);
       setY2(0);
       color = Color.BLACK;
+      flag = false;
    }
-   public MyLine(int x1, int y1, int x2, int y2, Color color)
+
+
+   public MyOval(int x1, int y1, int x2, int y2, Color color, boolean flag)
    {
       setX1(x1);
       setY1(y1);
       setX2(x2);
       setY2(y2);
       this.color = color;
+      this.flag = flag;
    }
 
    public void setX1(int x1)
@@ -78,6 +83,7 @@ public class MyLine
       }
    }
 
+
    public int getUpperLeftX()
    {
       return x1;
@@ -98,10 +104,17 @@ public class MyLine
       return y2;
    }
 
-   // Draw the line in the specified color
-   public void draw(Graphics g)
+   public void drawMyOval(Graphics g)
    {
       g.setColor(color);
-      g.drawLine(getUpperLeftX(), getUpperLeftY(), getWidth(), getHeight());
+
+      if(flag)
+      {
+         g.drawOval(getUpperLeftX(), getUpperLeftY(), getWidth(), getHeight() );
+      }
+      else
+      {
+         g.fillOval(getUpperLeftX(), getUpperLeftY(), getWidth(), getHeight());
+      }
    }
-} // end class MyLine
+}
