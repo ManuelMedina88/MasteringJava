@@ -1,22 +1,22 @@
-// CommissionEmployee.java
+// CommissionEmployee3.java
 // @uthor : Manuel Medina.
-// Date : Jan 04th 2017 15:01
-// CommissionEmployee class represents an employee paid a
-// percentage of gross sales.
-public class CommissionEmployee extends Object
+// Date : Jan 5th 2018 8:44 a.m.
+// CommissionEmployee3 class uses methods to manipulate its
+// private instance variables.
+public class CommissionEmployee3
 {
-   protected final String firstName;
-   protected final String lastName;
-   protected final String socialSecurityNumber;
-   protected double grossSales; // gross weekly sales
-   protected double commissionRate; // commission percentage
+   private final String firstName;
+   private final String lastName;
+   private final String socialSecurityNumber;
+   private double grossSales; // gross weekly sales
+   private double commissionRate; // commission percentage
 
    // five-argument constructor
-   public CommissionEmployee(String firstName, String lastName,
-                             String socialSecurityNumber, double grossSales,
-                             double commissionRate)
+   public CommissionEmployee3(String firstName, String lastName,
+                              String socialSecurityNumber, double grossSales,
+                              double commissionRate)
    {
-      // implicit call to Object's default constructor occurs here
+      // implicit call to Object constructor occurs here
 
       // if grossSales is invalid throw exception
       if (grossSales < 0.0)
@@ -74,7 +74,7 @@ public class CommissionEmployee extends Object
    {
       if (commissionRate <= 0.0 || commissionRate >= 1.0)
          throw new IllegalArgumentException(
-         "Commission rate must be > 0.0 and < 1.0");
+            "Commission rate must be > 0.0 and < 1.0");
 
       this.commissionRate = commissionRate;
    }
@@ -85,18 +85,20 @@ public class CommissionEmployee extends Object
       return commissionRate;
    }
 
+   // calculate earnings
    public double earnings()
    {
-      return commissionRate * grossSales;
+      return getCommissionRate() * getGrossSales();
    }
+
    // return String representation of CommissionEmployee object
-   @Override // indicates that this method overrides a superclass method
+   @Override
    public String toString()
    {
       return String.format("%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f",
-         "commission employee", firstName, lastName,
-         "social security number", socialSecurityNumber,
-         "gross sales", grossSales,
-         "commission rate", commissionRate);
+         "commission employee", getFirstName(), getLastName(),
+         "social security number", getSocialSecurityNumber(),
+         "gross sales", getGrossSales(),
+         "commission rate", getCommissionRate());
    }
 } // end class CommissionEmployee
